@@ -1,0 +1,15 @@
+@DotNet9Authentication_HostAddress = http://localhost:5086
+
+GET {{DotNet9Authentication_HostAddress}}/weatherforecast/
+Accept: application/json,
+Authorization: Bearer CfDJ8LqKl1czygtNkEyO8eQsGUo62TEGoqpVGJEm1YvrEeoPCDSvD28l3wNwO9Le7sLA9GUuN1QY9mfHNje6iZLWiqrdqVgpM5NO0f288NKOB8Y1LITQTwwqyr68990V4aDAhcn_go9pwvHN0B-sd8d2kkT3uiOFRs2DNFbm3jdGjwvX6OjycqJIALA3s1EGgqkicv9wns9ahx7Cr-UfOSpCsKZ7TUTFxZP4dyLyDNpFBbwIPheJUg8AjoA5eVvRd-fCRpztCN4qjR6T87dL8C-EkJ_MhvZLwwJqMYH-tREqhh3qO1uGSicUEkX8s90gkutEppJFW7BH3Zl86P563IQNdqBKJSUjGvW8SHlqmDJSJgkwV5OjCMlPeyo1tzwGgUsNKK_A8A1CbqcVTcqM6r8Cugvj88qbb6FGiJiT7lSc4taANaI_dfIS0DC0-xQTDDZvqU6gWTvfbKbf75OZOCzHe_nuHBSrs3abuQkvJ5tJL0Jnm1THLTEV00ClR_7cbug77otbVDPRUqJzZL3ipDrVMhVxWrD4dXmaJcnxxbSqE2lQUiciO73RZv7BdNGJptTyzJJC0mLUzLVV6HWl5pnlQ-d0dDKed1sAyeZlQmnRC9q5bTEEQlNMzOBG0j3tqUP_JLB8nk4Dn53r8-EPFXM2nOlu90Npi9BWHGbzehBaN6hay4xdyVUqx-u9LQ7Z8X7FhIYWDB5fW7sbivD72zHzGgk
+###
+POST {{DotNet9Authentication_HostAddress}}/login
+Content-Type: application/json
+
+{
+  "email": "john.alnemeh@gmail.com",
+  "password": "Qwe!23",
+  "twoFactorCode": "string",
+  "twoFactorRecoveryCode": "string"
+}
